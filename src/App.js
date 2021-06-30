@@ -17,7 +17,7 @@ function App() {
         zoom: 4,
     });
     const [pins, setPins] = useState([]);
-    const [currentUser, setCurrentUser] = useState(null);
+    const [currentUser, setCurrentUser] = useState(myStorage.getItem("user"));
     const [newPlace, setNewPlace] = useState(null);
     const [currentPlaceId, setCurrentPlaceId] = useState(null);
     const [title, setTitle] = useState(null);
